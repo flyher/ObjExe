@@ -115,7 +115,7 @@ int main(int argc,char *argv[])
 		Cal *deskCalc=[[Cal alloc] init];
 		
 		NSLog(@"Type int your expression.");
-		sacnf("%Lf %c %Lf",&value1,&operator,&value2);
+		sacnf("%lf %c %lf",&value1,&operator,&value2);
 		[deskCalc setAccumulator:value1];
 		if(operator=='+')
 			[deskCalc add:value2];
