@@ -26,4 +26,42 @@ int main(int argc,char *argv[])
 	}
 	NSLog(@"The 200th triangular is %i",triNum);
 }
-//
+//代码清单5-4 阶加
+#import <Foundation/Foundation.h>
+int main(int argc,char *argv[])
+{
+	@autorealeasepool{
+		int n,number,triNum;
+		NSLog(@"what triangular number do you want?");
+		scanf("%i",&number);
+		for(n=1;n<=number;++n)
+		{
+			triNum+=n;
+		}
+		NSLog(@"Number is %i,the result is %i\n",number,triNum);
+	}
+	return 0;
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
