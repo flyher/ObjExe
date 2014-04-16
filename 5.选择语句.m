@@ -128,7 +128,43 @@ int main(int argc,char *argv[])
 	return 0;
 }
 
+//代码清单6-9 评估简单表达式的值
+#import <Foundation/Foundation.h>
 
+//接口和实现部分 Cal
+
+int main(int argc,char *argv[])
+{
+	@autoreleasepool{
+		double value1,value2;
+		cahr operator;
+		Cal *cal=[[Cal alloc] init];
+		
+		NSLog(@"Input you num:");
+		sacnf("%lf %c %lf",&value1,&operator,&value2);
+		
+		[cal setAccumulator:value1];
+		switch(operator){
+			case '+':
+				[cal add:value2];
+				break;
+			case '-'
+				[cal subtract:value2];
+				break;
+			case '*':
+				[cal multiply:value2];
+				break;
+			case '/':
+				[cal divide:value2];
+				break;
+			default:
+				NSLog(@"Unknown operator.");
+				break;
+		}
+		NSLog(@"%.2f",{cal accumulator}):
+	}
+	return 0;
+}
 
 
 
