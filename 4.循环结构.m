@@ -55,7 +55,7 @@ int main(int argc,char *argv[])
 	}
 	return 0;
 }
-//代码清单5-7 求u和v的最大公约数
+//代码清单5-7 求u和v的最大公约数 ?
 #import <Foundation/Foundation.h>
 int main(int argc,char *argv[])
 {
@@ -68,7 +68,7 @@ int main(int argc,char *argv[])
 			u=v;
 			v=temp;
 		}
-		NSLog(@"result is %u");
+		NSLog(@"result is %u",u);//
 	}
 	return 0;
 }
