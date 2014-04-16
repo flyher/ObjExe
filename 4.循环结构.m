@@ -42,8 +42,37 @@ int main(int argc,char *argv[])
 	}
 	return 0;
 }
-	
-	
+//代码清单5-6while循环
+#import <Foundation/Foundation.h>
+int main(int argc,char *argv[])
+{
+	@autoreleasepool{
+		int count=1;
+		while(count<=5){
+			NSLog(@"%i",count);
+			++count;
+		}
+	}
+	return 0;
+}
+//代码清单5-7 求u和v的最大公约数
+#import <Foundation/Foundation.h>
+int main(int argc,char *argv[])
+{
+	@autoreleasepool{
+		unsigned int u,v,temp;
+		NSLog(@"Please enter two num:");
+		scanf("%u%u",&u,&v);
+		while(v!=0){
+			temp=u%v;
+			u=v;
+			v=temp;
+		}
+		NSLog(@"result is %u");
+	}
+	return 0;
+}
+
 	
 	
 	
