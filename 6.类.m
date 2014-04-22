@@ -23,16 +23,28 @@ int main(int argc,char *argv[])
 -(void) print;
 -(void) setA:(int) a;
 -(void) setB:(int) b;
--(int) number;
--(int) result;
+-(int) x;
+-(int) y;
 @end
 //实现文件：Fraction.m
 #import "Fraction.h"
 @implementation Fraction
 {
-	int 
+	int x;
+	int y;
 }
-
+-(void) print
+{
+	NSLog(@"%i/%i",x,y);
+}
+-(void) setA:(int) a
+{
+	x=a;
+}
+-(void) setB:(int) b
+{
+	y=b;
+}
 
 
 
