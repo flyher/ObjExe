@@ -27,9 +27,11 @@ int main(int argc,char *argv[])
 -(int) y;
 -(double) ConvertToNum;
 @end
+========
 //实现文件：Fraction.m
 #import "Fraction.h"//将接口文件导入实现文件中
 @implementation Fraction
+//@synthesize numerator,denominator
 {
 	int x;
 	int y;
