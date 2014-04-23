@@ -31,7 +31,7 @@ int main(int argc,char *argv[])
 //实现文件：Fraction.m
 #import "Fraction.h"//将接口文件导入实现文件中
 @implementation Fraction
-//@synthesize numerator,denominator
+//@synthesize x,y 或者使用下面的
 {
 	int x;
 	int y;
