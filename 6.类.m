@@ -25,9 +25,10 @@ int main(int argc,char *argv[])
 -(void) setB:(int) b;
 -(int) x;
 -(int) y;
+-(double) ConvertToNum;
 @end
 //实现文件：Fraction.m
-#import "Fraction.h"
+#import "Fraction.h"//将接口文件导入实现文件中
 @implementation Fraction
 {
 	int x;
@@ -45,8 +46,22 @@ int main(int argc,char *argv[])
 {
 	y=b;
 }
-
-
+-(int) x
+{
+	return x;
+}
+-(int) y
+{
+	return y;
+}
+-(double) ConvertToNum
+{
+	if(y!=0)
+		return (double)x/y;
+	else
+		return NAN;
+}
+@end
 
 
 
