@@ -110,8 +110,27 @@ int main(int argc,char *argv[])
 	}
 	return 0;
 }
+//
+-(void) add:(Fraction *) f;
+{
+	a=a*f.b+b*f.a;
+	b=b*f.b;
+}
 
-
+//最大公约数方法
+-(void) reduce
+{
+	int x=x;
+	int y=y;
+	int temp;
+	while(y!=0){
+		temp=u%v;
+		u=v;
+		v=temp;
+	}
+	x/=u;
+	y/=u;
+}
 
 
 
