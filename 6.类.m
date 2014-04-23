@@ -64,6 +64,22 @@ int main(int argc,char *argv[])
 		return NAN;
 }
 @end
+//具有多个参数的方法
+[myFraction setTo: 1 over:3]
+//代码清单7-2 接口文件：Fraction.h
+#import <Foundation/Foundation.h>
+//定义Fraction类
+@interface Fraction:NSObject
+@property int numerator,denominator;
+@end
+
+
+
+
+
+
+
+
 
 
 
