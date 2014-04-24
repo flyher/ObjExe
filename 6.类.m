@@ -132,6 +132,9 @@ int main(int argc,char *argv[])
 	y/=u;
 }
 
+//static¹Ø¼ü×Ö
+static int hitCount=0;
+
 
 
 
