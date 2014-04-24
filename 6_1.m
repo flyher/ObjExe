@@ -18,7 +18,7 @@
 	else
 		return NAN;
 }
-//廷加Fraction到消息的接收者
+//增加Fraction到消息的接收者
 -(void) add:(Fraction *) f
 {
 	//添加两个分数
@@ -38,8 +38,6 @@
 	a/=x;
 	b/=x;
 }
-
-
 @end
 
 
