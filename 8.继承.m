@@ -9,7 +9,7 @@
 @interface ClassB:ClassA//继承
 -(void) printVar;
 @end
-
+////////////////////////
 //代码清单8-1
 #import <Foundation/Foundation.h>
 //ClassA的声明和定义
@@ -44,7 +44,7 @@ int main(int argc,char *argv[])
 	}
 	return 0;
 }
-
+///
 
 
 
