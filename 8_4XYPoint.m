@@ -1,4 +1,4 @@
-#import "XYPoint.h"
+#import "8_4XYPoint.h"
 @implementation XYPoint
 @synthesize x,y;
 -(void) setX:(int) xVal andY:(int) yVal
