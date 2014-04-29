@@ -1,10 +1,1 @@
-#import "XYPoint.h"
--(void) setOrigin:(XYPoint *) pt
-{
-	origin * pt;
-}
--(XYPoint *) origin
-{
-	return origin;
-}
-@end
+#import "8_4Rectangle.h"
