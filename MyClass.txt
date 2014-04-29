@@ -1,0 +1,9 @@
+//接口和实现
+//MyClass.h
+@interace MyClass:NSObject{
+}
+@end
+//MyClass.m
+@implementation MyClass
+@end
+//
