@@ -23,10 +23,11 @@
 int main(int argc,char *argv[])
 {
 	@autoreleasepool{
-		CLASSB *b=[[ClassB alloc] init];
+		ClassB *b=[[ClassB alloc] init];
 		[b initVar];//使用B中覆盖的方法
 		[b printVar];//显示x的值
 	}
+	return 0;
 }
 
 
