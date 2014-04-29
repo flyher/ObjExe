@@ -6,4 +6,7 @@
 //MyClass.m
 @implementation MyClass
 @end
-//
+//创建对象
+MyClass *objectName=[[MyClass alloc] init];
+//方法
+-(void)
