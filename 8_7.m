@@ -14,3 +14,25 @@ int main(int argc,char *argv[])
 	}
 	return 0;
 }
+///////////////////
+//ClassA的声明和定义
+@interface ClassA:NSObject
+{
+	int x;//将由子类继承
+}
+-(void) initVar;
+-(void) printVar;
+@end
+@implementation ClassA
+-(void) initVar
+{
+	x=100;
+}
+-(void) printVar
+{
+	NSLog(@"x=%i",x);
+}
+@end
+
+
+
