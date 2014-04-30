@@ -9,7 +9,8 @@ int main(int argc,char *argv[])
 		[a initVar];//使用ClassA方法
 		[a printVar];//显示x的值
 		
-		
+		[b initVar];//使用ClassB中覆盖的方法
+		[b printVar];//显示x的值
 	}
 	return 0;
 }
