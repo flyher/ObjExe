@@ -27,3 +27,38 @@ public class Kids:System
 		return true;
 	}
 }
+
+//kids.h
+@interface Kids:NSObject{
+	NSString *kidName;
+	NSString *kidAge;
+}
+-(BOOL)isCaughtKid;
+@end
+//kids.m
+#import "kids.h"
+@implementation Kids
+-(void) init{
+	kidName=@"mykid";
+	kidAge=@"15";
+}
+-(BOOL) isCaughtKid{
+	return YES;
+}
+@end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
