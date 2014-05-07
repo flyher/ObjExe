@@ -47,9 +47,8 @@ public class Kids:System
 }
 @end
 
-
-
-
+//
+-(void) setKids:(NSString *)myOldestKidName secondKid:(NSString *)mySecondOldestKidName thirdKid:(NSString *)myThirdOldestKidName;
 
 
 
