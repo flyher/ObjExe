@@ -7,3 +7,23 @@ private void hello(bool ishello)
 {
 	//OOXX
 }
+//中括号
+this.hello(true);
+[self hello:YES];
+//所有的类都是用NS开头
+NSLog
+NSString
+NSInteger
+NSURL
+NSImage
+NSLog(@"%d",myint);
+//C#
+public class Kids:System
+{
+	private string kidName="mykid";
+	private string kidAge="15";
+	private bool isCaughtKid
+	{
+		return true;
+	}
+}
