@@ -1,0 +1,9 @@
+//方法对比
+private void hello(bool ishello)
+{
+	//OOXX
+}
+-(void) hello:(BOOL)ishello
+{
+	//OOXX
+}
