@@ -49,8 +49,14 @@ public class Kids:System
 
 //
 -(void) setKids:(NSString *)myOldestKidName secondKid:(NSString *)mySecondOldestKidName thirdKid:(NSString *)myThirdOldestKidName;
+-(void) setKids:(NSString *)myOldestKidName secondKid:(NSString *)mySecondOldestKidName thirdKid:(NSString *)myThirdOldestKidName{
+	大儿子=myOldestKidName;
+	二儿子=mySecondOldestKidName;
+	三儿子=myThirdOldestKidName;
+}
 
-
+Kids *myKids=[[Kids alloc] init];
+[myKids setKids:@"张大力" secondKid:@"张二力" thirdKid:@"张小力"];
 
 
 
