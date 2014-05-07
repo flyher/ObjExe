@@ -12,6 +12,11 @@ int main(int argc,char *argv[])
 		[c1 setReal:10.0 andImaginary:2.5];
 		
 		//第一个dataValue 获得了一个分数
-		
+		dataValue=f1;
+		[dataValue print];
+		//第一个dataValue获得了一个Complex数
+		dataValue=c1;
+		[dataValue print];
 	}
+	return 0;
 }
