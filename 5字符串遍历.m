@@ -18,4 +18,11 @@ int count=[str6length];
 	//必须使用%C 才能正常输出中文
 	
 	//比较字符串
-	NSString* str1
+	NSString *str1=[[NSString alloc] init];
+	str1=@"Object-c练习";
+	
+	NSString *str2=[[NSString alloc] initWithString:@"Object-c第一课"];
+	BOOL flag=[str1 isEqualToString:str2];
+	if(flag){
+		NSLog(@"%@",@"字符串相等");
+	}
