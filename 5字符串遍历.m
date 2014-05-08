@@ -53,6 +53,7 @@ if([str1 hasSuffix:@"LOVE"]){
 if([str1 hasSuffix:@"love"]){
 	NSLog(@"字符串:%@是以%@结尾",str1,@"LOVE");
 }
+
 //6.截取字符串
 NSString *str2=[str1 substringToIndex:3];
 NSLog(@"从索引0开始截取到索引3的位置:%@",str2);
@@ -67,11 +68,52 @@ NSLog(@"从指定位置开始截取特定长度:%@",str4);
 range=NSMakeRange(2,100);
 NSString *str5=[str1 substringWithRange:range];
 NSLog(@"从指定位置开始截取特定长度:%@",str5);
-	
-	
-	
-	
-	
+
+//7.字符串大小写转化
+NSString *str1=@"object-c练习";
+//转化为大写
+NSString *str2=[str1 uppercaseString];
+NSLog(@"转化为大写:%@",str2);
+//转化为小写
+NSString *str4=[str1 capitalizedString];
+NSLog(@"转化为小写:%@",str3);
+
+//8.查找字符串
+NSString *str1=@"object-c 大小写转化 Love";
+NSString *t=[[NSString alloc] initWithCString:"Love"];
+NSRange range=[str1 rangeOfString:t];
+NSLog(@"Location=%d",range.location);
+NSLog(@"length=%d",range.length);
+
+//9.替换字符串
+NSString *str1=@"object-c大小写转化 Love";
+NSString *str2=[str1 stringByReplacingOccurrencesOfString:@"Love" withString:@"XCode"];
+NSLog(@"替换之后的字符串:%@",str2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
 	
 	
