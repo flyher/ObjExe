@@ -58,7 +58,10 @@ public class Kids:System
 Kids *myKids=[[Kids alloc] init];
 [myKids setKids:@"张大力" secondKid:@"张二力" thirdKid:@"张小力"];
 
-
+public void setKids(string myOldestKidName,string mySecondOldestKidName,string myThirdOldestKidName)
+{
+	...
+}
 
 
 
