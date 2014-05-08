@@ -26,3 +26,31 @@ int count=[str6length];
 	if(flag){
 		NSLog(@"%@",@"字符串相等");
 	}
+	//compare方法
+	NSString *str1=@"中国-朝鲜";
+	NSString *str2=@"中国-朝鲜";
+	
+	BOOL result=[str1 compare:str2]==NSOrderedSame;
+	NSLog(@"result:%d",result);
+	NSString *str3=@"abc";
+	NSString *str4=@"acc";
+	result=[str3 compare:str4]==NSOrderedAscending;
+	NSLog(@"result:%d",result);
+	
+	NSString *str5=@"abc";
+	NSString *str6=@"abc";
+	result=[str3 compare:str6]==NSOrderedDescending;
+	NSLog(@"result:%d",result);
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
