@@ -33,3 +33,63 @@
 @end
 
 //Obj-c里面类的定义有点像C#/java 中接口和接口的实现
+
+//对象实例化
+1. Engine* en=[Engine new];
+2. Engine* en=[[Engine alloc] init];
+
+//测试
+Engine* en=[[Engine alloc] init];
+	[en setAge:88];
+	[en setName:@"me"];
+	
+	int age=[en getAge];
+	NSString* name=[en getName];
+	
+	NSLog("--");
+	NSlog("@age:%i;name:%@",age,name);
+
+	NSLog("@age:%i;name:%@",[en getAge],[en getName]);
+	
+//@property
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
