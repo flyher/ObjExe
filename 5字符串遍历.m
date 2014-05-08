@@ -42,10 +42,31 @@ int count=[str6length];
 	result=[str3 compare:str6]==NSOrderedDescending;
 	NSLog(@"result:%d",result);
 	
-	
-	
-	
-	
+//5.字符串是否包含
+NSString *str1=@"Object-C练习";
+if([str1 hasPrefix:@"Object"]){
+	NSLog(@"字符串:%@是以%@开头",str1,@"Object");
+}
+if([str1 hasSuffix:@"LOVE"]){
+	NSLog(@"字符串:%@是以%@结尾",str1,@"LOVE");
+}
+if([str1 hasSuffix:@"love"]){
+	NSLog(@"字符串:%@是以%@结尾",str1,@"LOVE");
+}
+//6.截取字符串
+NSString *str2=[str1 substringToIndex:3];
+NSLog(@"从索引0开始截取到索引3的位置:%@",str2);
+
+NSString *str3=[str1 substringFromIndex:4];
+NSLog(@"从索引位置4开始截取到末尾:%@",str3);
+
+NSrange range=NSMakeRange(2,100);
+NSString *str4=[str1 substringWithRange:range];
+NSLog(@"从指定位置开始截取特定长度:%@",str4);
+
+range=NSMakeRange(2,100);
+NSString *str5=[str1 substringWithRange:range];
+NSLog(@"从指定位置开始截取特定长度:%@",str5);
 	
 	
 	
