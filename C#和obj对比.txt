@@ -62,6 +62,9 @@ public void setKids(string myOldestKidName,string mySecondOldestKidName,string m
 {
 	...
 }
+//调用
+Kids myKids=new Kids();
+myKids.setKids("张大力","张二力","张小力");
 
 
 
