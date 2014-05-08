@@ -51,7 +51,31 @@ Engine* en=[[Engine alloc] init];
 
 	NSLog("@age:%i;name:%@",[en getAge],[en getName]);
 	
-//@property
+//@property 类似C#中自实现属性 get set
+//语法:@property(attribute1,attribute2)type value;
+//@property(nonatomic) NSString* carName;
+#import <Foundation/Foundation.h>
+#import "Engine.h"
+@interface MyCar:NSObject
+{
+	int value;
+	float fValue;
+	NSString* carName;
+	Engine* en;
+}
+@property (nonatomic) int value;
+@property (nonatomic) float fValue;
+@property (nonatomic) NSString* carName;
+@property (retain) Engine* en;
+@end
+//
+#import "MyCar.h"
+@implementation MyCar
+@synthesize value;
+@synthesize fValue;
+@synthesize carName;
+@synthesize en;
+@end
 
 	
 	
