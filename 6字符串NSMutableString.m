@@ -13,4 +13,32 @@ NSLog(@"stringWithString=%@",str);
 NSRange range=[str rangeOfString:@"Mutable"];
 NSLog(@"Location=%d",rangle.location);
 NSLog(@"length=%d",range.length);
+
 [str deleteCharactersInRange:range];
+NSLog(@"deleteCharactersInRange=%@",str);
+
+//3.²åÈë×Ö·û´®
+NSMutableString *str=[NSMutableString stringWithString:@"Object-c"];
+NSLog(@"%@",str);
+NSString *str2=@"Ñ§Ï°";
+[str insertString:str2 atIndex:6];
+NSLog(@"insertString=%@",str);
+
+//4.×Ö·û´®¿½±´
+NSMutableString *str1=[NSMutableString stringWithString:@"×Ö·û´®1"];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
