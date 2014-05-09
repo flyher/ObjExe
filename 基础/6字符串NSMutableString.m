@@ -57,7 +57,3 @@ NSLog(@"转换为double类型:str3=%0.4f",value4);
 
 
 
-
-
-
-
