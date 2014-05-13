@@ -44,7 +44,18 @@ int main(int argc,const char *argv[])
 	}
 	return (0):
 }
-//
+//输出数组
+#import <Foundation/Foundation.h>
+int main(int argc,const char * argv[])
+{
+	const char *words[4]={"aaa","bbb","ccc","ddd"};
+	int wordsCount=4;
+	int i;
+	for(i=0;i<wordsCount;i++){
+		NSLog(@"%s is %d characters long",words[i],strlen(words[i]));//有点类似C#
+	}
+	return (0);
+}
 
 
 
