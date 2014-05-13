@@ -63,13 +63,13 @@ int main(int argc,const char * argv[])
 	FILE *wordFile=fopen("/tmp/words.txt","r");//打开txt，读取内容
 	char word[100];
 	while(fgets(word,100,wordFile)){//读取一行文本并将其放入word中
-		word[strlen(word)-1]='\0';//fgets()调用会保留分开每一行的换行符,替换为0表示字符串的结束
+		word[strlen(word)-1]='\0';//fgets()调用会保留分开每一行的换行符,换行符会被记为单词中的一个自付，替换为 \0表示字符串的结束
 		NSLog(@"%s is %d characters long",word,strlen(word));//
 	}
 	fclose(wordFile);
 	return (0);
 }
-
+//
 
 
 
