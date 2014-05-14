@@ -87,17 +87,18 @@ int main(int argc,const char * argv[])
 	fclose(wordFile);
 	return (0);
 }
-//
-#import <Foundation/Foundation.h
+//绘画图形
+#import <Foundation/Foundation.h>
 typeof enum{//绘制图形种类
 	kCircle,
 	kRectangle,
-	kEgg
+	kEgg,
+	kTriangle//增加一条三角形
 } ShapeType;
 typedef enum{//颜色
 	kRedColor,
 	kGreenColor,
-	kBlueColor
+	kBlueColor,
 } ShapeColor;
 typedef struct{
 	int x,y,width,height;
@@ -148,6 +149,11 @@ void drawShapes(Shape shapes[],int count)
 void drawCircle(ShapeRect bounds,ShapeColor fillColor)
 {
 	NSLog(@"drawing a circle at (%d %d %d %d) in %@",bounds.x,bounds.height,colorName(fillColor);
+}
+//
+void drawTriangle(ShapeRect bounds,ShapeColor fillColor)
+{
+	NSLog(@"drawing triangle at (%d %d %d %d) in %@",bounds.x,bounds.y,bounds.width,bounds.height,colorName(fillColor));
 }
 //选择颜色
 NSString *colorName(ShapeColor colorName)
