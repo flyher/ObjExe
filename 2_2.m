@@ -111,9 +111,57 @@ int main(int argc,const char * argv[])
 {
 	Shape shapes[3];
 	ShapeRect rect0={0,0,10,30};
+	shapes[0].type=kCircle;
+	shapes[0].fillColor=kRedColor;
+	shapes[0].bounds=rect0;
 	
+	ShapeRect rect1={30,40,50,60};
+	shapes[1].type=kRectangle;
+	shapes[1].fillColor=kRectangle;
+	shapes[1].bounds=rect1;
+	
+	ShapeRect rect2={15,18,37,29};
+	shapes[2].type=kEgg;
+	shapes[2].fillColor=kBlueColor;
+	shapes[2].bounds=rect2;
+	drawShapes(shapes,3);//绘制
+	return (0);
 }
-
+//绘制方法
+void drawShapes(Shape shapes[],int count)
+{
+	for(int i=0;i<count;i++){
+		switch(shapes[i].type){
+			case kCircle:
+				drawCircle (shapes[i].bounds,shapes[i].fillColor);
+			break;
+			case kRectangle:
+				drawRectangle(shapes[i].bounds,shapes[i].fillColor);
+			break;
+			case kEgg:
+				drawEgg(shapes[i].bounds,shapes[i].fillColor);
+			break;
+		}
+	}
+}
+//drawCircle
+void drawCircle(ShapeRect bounds,ShapeColor fillColor)
+{
+	NSLog(@"drawing a circle at (%d %d %d %d) in %@",bounds.x,bounds.height,colorName(fillColor);
+}
+//选择颜色
+NSString *colorName(ShapeColor colorName)
+{
+	switch(colorName){
+		case kRedColor:
+			return @"red";
+			break;
+		case kGreenColor:
+			return @"green";
+			break;
+	}
+	return @"no clue";
+}//colorName
 
 
 
