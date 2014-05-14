@@ -69,7 +69,73 @@ int main(int argc,const char * argv[])
 	fclose(wordFile);
 	return (0);
 }
+//读取文本的路径
+#import <Foundation/Foundation.h>
+int main(int argc,const char * argv[])
+{
+	if(argc==1){
+		NSLog(@"you need to provide a file name");
+		return (1);
+	}
+	FILE *wordFile=fopen(argv[1],"r");//因为程序名总是用作启动参数而传递，所以argc的值至少是1，也可能更大
+	char word[100];
+	while(fgets(word,100,wordFile))
+	{
+		word[strlen(word)-1]='\0';
+		NSLog(@"%s is %lu characters long",word,strlen(word));
+	}
+	fclose(wordFile);
+	return (0);
+}
 //
+#import <Foundation/Foundation.h
+typeof enum{//绘制图形种类
+	kCircle,
+	kRectangle,
+	kEgg
+} ShapeType;
+typedef enum{//颜色
+	kRedColor,
+	kGreenColor,
+	kBlueColor
+} ShapeColor;
+typedef struct{
+	int x,y,width,height;
+} ShapeRect;
+typedef struct{
+	ShapeType type;
+	ShapeColor fillColor;
+	ShapeRect bounds;
+} Shape;
+int main(int argc,const char * argv[])
+{
+	Shape shapes[3];
+	ShapeRect rect0={0,0,10,30};
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
