@@ -142,6 +142,9 @@ void drawShapes(Shape shapes[],int count)
 			case kEgg:
 				drawEgg(shapes[i].bounds,shapes[i].fillColor);
 			break;
+			case kTriangle://增加一条三角形
+				drawTriangle(shapes[i].bounds,shapes[i].fillColor);
+			break;
 		}
 	}
 }
