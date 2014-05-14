@@ -108,26 +108,6 @@ typedef struct{
 	ShapeColor fillColor;
 	ShapeRect bounds;
 } Shape;
-int main(int argc,const char * argv[])
-{
-	Shape shapes[3];
-	ShapeRect rect0={0,0,10,30};
-	shapes[0].type=kCircle;
-	shapes[0].fillColor=kRedColor;
-	shapes[0].bounds=rect0;
-	
-	ShapeRect rect1={30,40,50,60};
-	shapes[1].type=kRectangle;
-	shapes[1].fillColor=kRectangle;
-	shapes[1].bounds=rect1;
-	
-	ShapeRect rect2={15,18,37,29};
-	shapes[2].type=kEgg;
-	shapes[2].fillColor=kBlueColor;
-	shapes[2].bounds=rect2;
-	drawShapes(shapes,3);//绘制
-	return (0);
-}
 //绘制方法
 void drawShapes(Shape shapes[],int count)
 {
@@ -172,7 +152,32 @@ NSString *colorName(ShapeColor colorName)
 	return @"no clue";
 }//colorName
 
-
+int main(int argc,const char * argv[])
+{
+	Shape shapes[4];
+	ShapeRect rect0={0,0,10,30};
+	shapes[0].type=kCircle;
+	shapes[0].fillColor=kRedColor;
+	shapes[0].bounds=rect0;
+	
+	ShapeRect rect1={30,40,50,60};
+	shapes[1].type=kRectangle;
+	shapes[1].fillColor=kRectangle;
+	shapes[1].bounds=rect1;
+	
+	ShapeRect rect2={15,18,37,29};
+	shapes[2].type=kEgg;
+	shapes[2].fillColor=kBlueColor;
+	shapes[2].bounds=rect2;
+	
+	ShapeRect rect3={15,18,37,29};
+	shapes[3].type=kTriangle;
+	shapes[3].fillColor=kRedColor;
+	shapes[3].bounds=rect3;
+	
+	drawShapes(shapes,4);//绘制
+	return (0);
+}
 
 
 
