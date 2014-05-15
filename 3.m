@@ -25,7 +25,6 @@
 }//draw
 
 //完整的实现绘图程序
-
 @interface Triangle:NSObject
 {
 	ShapeColor fillColor;
@@ -35,7 +34,21 @@
 -(void) setBounds:(ShapeRect) bounds;
 -(void) draw;
 @end //Triangle
-
+@implementation Triangle
+-(void) setFillColor:(ShapeColor) c
+{
+	fillColor=c;
+}
+-(void) setBounds:(ShapeRect) b
+{
+	bounds=b;
+}
+-(void) draw
+{
+	NSLog(@"drawing a triangle at (%d %d %d %d) in %@",bounds.x,bounds.y,bounds.width,bounds.height,colorName(fillColor));
+}
+//setfillColor
+@end
 
 
 
