@@ -24,6 +24,17 @@
 	NSLog(@"drawing a circle at (%d %d %d %d) in %@",bounds.x,bounds.y,bounds.width,bounds.height,colorName(fillColor));
 }//draw
 
+//完整的实现绘图程序
+
+@interface Triangle:NSObject
+{
+	ShapeColor fillColor;
+	ShapeRect bounds;
+}
+-(void) setFillColor:(ShapeColor) fillColor;
+-(void) setBounds:(ShapeRect) bounds;
+-(void) draw;
+@end //Triangle
 
 
 
