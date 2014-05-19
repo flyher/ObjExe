@@ -86,7 +86,7 @@
 	{
 		c=kGreenColor;
 	}
-	[super setFillColor:c];
+	[super setFillColor:c];//调用父类方法
 }
 @end
 
