@@ -24,3 +24,18 @@
 	return (@"i am an engine,Vroom!");
 } //description
 @end //Engine
+@interface Car:NSObject
+{
+    Engine *engine;
+    Tire *tires[4];
+}
+-(void) print;
+@end //Car
+
+//新建Car对象
+
+
+
+
+
+
