@@ -54,6 +54,48 @@
     NSLog(@"%@",tires[3]);
 } //print
 @end //Car
+int main(int argc,const char *argv[])
+{
+    Car *car;
+    car=[Car new];
+    [car print];
+    return (0);
+} //main
+//给car添加一些setter和getter方法:
+@interface Car:NSObject
+{
+    Engine *engine;
+    Tire *tires[4];
+}
+-(Engine *) engine;
+-(void) setEngine:(Engine *) newEngine;
+-(Tire *) tireAtIndex:(int) index;
+-(void) setTire:(Tire *) tire atIndex:(int) index;
+-(void) print;
+@end
+//////////////
+-(Engine *) engine
+{
+    return (engine);
+} //engine
+-(void) setEngine:(Engine *) new Engine
+{
+    engine=newEngine;
+}//setEngine
+//
+Engine *engine=[Engine new];
+[car setEngine:engine];
+NSLog(@"the car's engine is %@",[car engine]);
+
+
+
+
+
+
+
+
+
+
 
 
 
