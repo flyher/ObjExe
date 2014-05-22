@@ -18,3 +18,41 @@ C:类
 
 为程序代码创建快照以防突发事故
 File>Restore Snapshot...
+
+替换功能:
+Edit>Find
+
+Command+Shift+F
+
+Edit all in Scope(在范围内编辑全部内容)
+
+将类名Car更换为Automobile
+光标移至该类名中->Edit->Refactor->Rename...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
