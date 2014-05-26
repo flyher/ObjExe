@@ -35,6 +35,7 @@ Edit all in Scope(在范围内编辑全部内容)
 #pragma mark -//在菜单中插入分割线
 
 
+帮助文档 按住option键并双击某个符号;
 
 
 
