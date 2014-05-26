@@ -7,8 +7,8 @@
 右边的按钮:负责检查器面板;
 
 Control+I 代码格式化
-Command+[ 选中的代码右移
-Command+] 选中的代码左移
+Command+[ 选中的代码左移
+Command+] 选中的代码右移
 按下tab确认提示的代码
 按下esc关闭出现的提示代码
 
