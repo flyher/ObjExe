@@ -91,6 +91,17 @@ if([thing1 compare:thing2 options:NSCaseInsensitiveSearch|NSNumericSearch]==NSOr
 //NSCaseInsensitiveSearch:不区分大小写字符;
 //NSNumericSearch:比较字符串个数进行排序
 
+//字符串是否还包含别的字符串
+NSString *fileName=@"draft-chapter.pages";
+if([fileName hasPrefix:@"draft"])
+{
+    //this is a draft
+}
+if([fileName hasSuffix:@".mov"])
+{
+    //this is a movie
+}
+
 
 
 
