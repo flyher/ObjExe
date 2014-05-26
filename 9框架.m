@@ -34,10 +34,13 @@ struct CGRect
     CGPoint origin;
     CGSize size;
 };
+//创建字符串
+NSString *height;
+height=[NSString stringWithFormat:@"Your height is %d feet,%d inches",5,11];
 
 
-
-
+//如果在声明方法时添加了加号,就是把这个方法定义为类方法,这个方法属于类对象(而不是类的示例对象),通常用于创建新的实例,我们称这种用来创建新对象的类方法为工厂方法.
++(id) stringWithFormat:(NSString *) format,..;
 
 
 
