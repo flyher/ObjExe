@@ -31,6 +31,8 @@ Edit all in Scope(在范围内编辑全部内容)
 将类名Car更换为Automobile
 光标移至该类名中->Edit->Refactor->Rename...
 
+#pragma mark whatever //whatever可以填写任何文字,类似于注释
+#pragma mark -//在菜单中插入分割线
 
 
 
