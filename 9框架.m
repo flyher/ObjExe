@@ -101,7 +101,16 @@ if([fileName hasSuffix:@".mov"])
 {
     //this is a movie
 }
+//rangOfString
+-(NSRange) rangeOfString:(NSString *) aString;
 
++(id) stringWithCapacity:(NSUInteger) capacity;
+
+NSMUtableString *string=[NSMutableString stringWithCapacity:42];
+[string appendString:@"Hello there"];
+[string appendFormat:@"human %d!",39];
+
+//appendString 
 
 
 
