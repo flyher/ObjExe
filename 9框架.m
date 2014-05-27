@@ -115,6 +115,17 @@ NSMUtableString *string=[NSMutableString stringWithCapacity:42];
 //deleteCharactersInRange:方法删除字符串的字符
 -(void) deleteCharactersInRange:(NSRange) aRange;
 
+//一个创建朋友并删除朋友Jack的方法
+NSMutableString *friends=[NSMutableString stringWithCapacity:50];
+[friends appendString:@"James BethLynn Jack Evan"];
+NSRange jackRange=[friends rangeOfString:@"Jack"];
+jackRange.length++;//
+[friends deleteCharactersInRange:jackRange];
+
+//继承至NSString的方法stringWithFormat
+NSMutableString *string=[NSMutableString stringWithFormat:@"jo%dy",2];
+
+
 
 
 
