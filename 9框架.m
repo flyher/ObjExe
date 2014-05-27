@@ -110,7 +110,13 @@ NSMUtableString *string=[NSMutableString stringWithCapacity:42];
 [string appendString:@"Hello there"];
 [string appendFormat:@"human %d!",39];
 
-//appendString 
+//appendString :接收参数aString,然后将其复制到接收对象的末尾.
+//上面打印下来就是: Hello there human 39!
+//deleteCharactersInRange:方法删除字符串的字符
+-(void) deleteCharactersInRange:(NSRange) aRange;
+
+
+
 
 
 
