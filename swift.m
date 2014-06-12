@@ -8,4 +8,7 @@ let myConstant=42
 let implicitInteger =70
 let implicitDouble=70.0
 let explicitDouble:Double=70;
-//练习:
+//练习:转行类型需要显示转换
+let a="Width is"
+let b=90
+let c=a+String(b)
