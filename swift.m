@@ -111,6 +111,57 @@ for vari=0;i<3;++i{
 }
 secondForLoop
 
+//使用->指定函数返回值
+func greet(name:String,day:String)->String{
+    return "Hello \(name),today is \(day)."
+}
+greet("Bob","Tuesday")
+
+//使用元组来返回多个值
+func getGasPrices()->(Double,Double,Double){
+    return (3.59,3.69,3.79)
+}
+getGasPrices()
+
+//函数的参数数量可变，用一个数组来获取它们：
+func sumof(numbers:Int...)->Int{
+    var sum=0
+    for number in numbers{
+        sum+=number
+    }
+    return sum
+}
+sumOf()
+sumOf(42,597,12)
+
+//练习:写一个计算参数平均值的函数
+func avgs(number:Int)->Int{
+    return number/2
+}
+avgs(12)
+
+//嵌套函数
+func returnFifteen()->Int{
+    var y=10
+    func add(){
+        y+=5
+    }
+    add()
+    return y
+}
+returnFifteen()->Int{
+    var y=10
+    func add(){
+        y+=5
+    }
+    add()
+    return y
+}
+returnFifeen()
+
+//函数是第一等类型，这意味着函数可以作为另一个函数的返回值
+
+
 
 
 
