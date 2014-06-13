@@ -160,9 +160,38 @@ returnFifteen()->Int{
 returnFifeen()
 
 //函数是第一等类型，这意味着函数可以作为另一个函数的返回值
+func makeIncrementer()->(Int->Int){
+    func addOne(number:Int)->Int{
+        return 1+number
+    }
+    return addOne
+}
+var increment=makeIncrementer()
+increment(7)
 
+//函数也可以当作参数传到另一个函数
+func hasAnyMatches(list:Int[],condition:Int->Bool{
+    for item in list{
+        if condition(item){
+            return true
+        }
+    }
+    return false
+}
+func lessThanTen(number:Int)->Bool{
+    return number<10
+}
+var numbers=[20,19,7,12]
+hasAnyMatches(numbers,lessThanTen)
 
+//{}创建一个匿名闭包;使用in将参数和返回值类型声明与闭包函数体进行分离
+numbers.map({
+    (number:Int)->Int in
+    let result=3*number
+    return result
+})
 
+numbers.map({number in 3*number})
 
 
 
