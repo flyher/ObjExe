@@ -193,6 +193,7 @@ numbers.map({
 
 numbers.map({number in 3*number})
 
+sort([1,5,3,12,2]){$0>$1}
 
 
 
